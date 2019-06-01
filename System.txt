@@ -1,0 +1,42 @@
+Employee and animal have Cards
+Lookup tablles dont need cards
+Maintain - Search
+Search  -populate the table with all the data
+	-Search bar at the top
+	-Click open the file
+	-Display animal Card
+	-Delete or Update buttons
+	-Displays the information
+
+Basic CRUD - Needs to be in one page
+
+Wollies Logo should be navigate back to homepage.
+
+Navbar Order:
+0. Calander/diary entry (Nickey)
+1. Animal (Nickey)
+	-Kennel
+	-Move Animal to Kennel
+2. Adoption (Divin)
+	- Adopter (Divin)
+	- Add Adopter
+	- Search Adopter
+ 	- Maintain (Update,Delete) + Status Upload + upload documentation
+3. Foster Care (Nickey)
+4. Veterinarian Changes to Medical (Divin)	
+5. Donations (Nickey)
+6. Employee (User Access) (Divin)
+7. Admin (Nickey)
+8. Kennel (Divin)
+9. Event (Nickey)
+10. Volunteer (Divin)
+11. Stock (Divin)
+12. Reports (User Access) (Nickey)
+
+
+
+Move Animal to Kennel
+Ask for Animal to move
+Confirm move
+Shows the kennel to move to
+click the kennel to move to

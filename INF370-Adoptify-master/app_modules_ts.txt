@@ -1,0 +1,130 @@
+*ADOPTION FOLDER*
+
+import { CreateAdoptionComponent } from './create-adoption/create-adoption.component';
+import { SearchAdoptionComponent } from './search-adoption/search-adoption.component';
+import { MaintainAdoptionComponent } from './maintain-adoption/maintain-adoption.component';
+import { CaptureAdoptionPaymentComponent } from './capture-adoption-payment/capture-adoption-payment.component';
+import { CaptureAdoptionHomeCheckReportComponent } from './capture-adoption-home-check-report/capture-adoption-home-check-report.component';
+import { ScheduleAdoptionHomeCheckComponent } from './schedule-adoption-home-check/schedule-adoption-home-check.component';
+import { CaptureAdoptionDocumentComponent } from './capture-adoption-document/capture-adoption-document.component';
+import { CollectAnimalComponent } from './collect-animal/collect-animal.component';
+import { ReturnAnimalComponent } from './return-animal/return-animal.component';
+
+
+CreateAdoptionComponent,
+    SearchAdoptionComponent,
+    MaintainAdoptionComponent,
+    CaptureAdoptionPaymentComponent,
+    CaptureAdoptionHomeCheckReportComponent,
+    ScheduleAdoptionHomeCheckComponent,
+    CaptureAdoptionDocumentComponent,
+    CollectAnimalComponent,
+    ReturnAnimalComponent,
+
+*MEDICAL*
+
+import { MedicalBookComponent } from './medical-book/medical-book.component';
+import { AddVetComponent } from './add-vet/add-vet.component';
+import { MaintainVetComponent } from './maintain-vet/maintain-vet.component';
+import { SearchVetComponent } from './search-vet/search-vet.component';
+import { AddTreatmentComponent } from './add-treatment/add-treatment.component';
+import { AddVetTreatmentComponent } from './add-vet-treatment/add-vet-treatment.component';
+import { AddVetAppointmentComponent } from './add-vet-appointment/add-vet-appointment.component';
+import { SearchVetAppointmentComponent } from './search-vet-appointment/search-vet-appointment.component';
+import { MaintainVetAppointmentComponent } from './maintain-vet-appointment/maintain-vet-appointment.component';
+import { CaptureMedicalCardComponent } from './capture-medical-card/capture-medical-card.component';
+import { SearchTreatmentComponent } from './search-treatment/search-treatment.component';
+import { MaintainTreatmentComponent } from './maintain-treatment/maintain-treatment.component';
+
+MedicalBookComponent,
+    AddVetComponent,
+    MaintainVetComponent,
+    SearchVetComponent,
+    AddTreatmentComponent,
+    AddVetTreatmentComponent,
+    AddVetAppointmentComponent,
+    SearchVetAppointmentComponent,
+    MaintainVetAppointmentComponent,
+    CaptureMedicalCardComponent,
+    SearchTreatmentComponent,
+    MaintainTreatmentComponent,
+
+*EMPLOYEES*
+
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { SearchEmployeeComponent } from './search-employee/search-employee.component';
+import { EmployeeCardComponent } from './employee-card/employee-card.component';
+import { MaintainEmployeeComponent } from './maintain-employee/maintain-employee.component';
+import { AddEmployeeTypeComponent } from './add-employee-type/add-employee-type.component';
+import { SearchEmployeeTypeComponent } from './search-employee-type/search-employee-type.component';
+import { MaintainEmployeeTypeComponent } from './maintain-employee-type/maintain-employee-type.component';
+
+  MaintainEmployeeComponent,
+    AddEmployeeTypeComponent,
+    SearchEmployeeTypeComponent,
+    MaintainEmployeeTypeComponent,
+    
+*ADOPTER*
+
+import { SearchAdopterComponent } from './search-adopter/search-adopter.component';
+import { MaintainAdopterComponent } from './maintain-adopter/maintain-adopter.component';
+
+SearchAdopterComponent,
+    MaintainAdopterComponent,
+
+*KENNEL*
+
+import { SearchKennelComponent } from './search-kennel/search-kennel.component';
+import { MaintainKennelComponent } from './maintain-kennel/maintain-kennel.component';
+import { MoveAnimalToKennelComponent } from './move-animal-to-kennel/move-animal-to-kennel.component';
+
+SearchKennelComponent,
+    MaintainKennelComponent,
+    MoveAnimalToKennelComponent,
+
+*VOLUNTEER*
+
+import { AddVolunteerComponent } from './add-volunteer/add-volunteer.component';
+import { SearchVolunteerComponent } from './search-volunteer/search-volunteer.component';
+import { MaintainVolunteerComponent } from './maintain-volunteer/maintain-volunteer.component';
+import { AddVolunteerWorkTypeComponent } from './add-volunteer-work-type/add-volunteer-work-type.component';
+import { SearchVolunteerWorkTypeComponent } from './search-volunteer-work-type/search-volunteer-work-type.component';
+import { MaintainVolunteerWorkTypeComponent } from './maintain-volunteer-work-type/maintain-volunteer-work-type.component';
+import { AddVolunteerWorkHoursComponent } from './add-volunteer-work-hours/add-volunteer-work-hours.component';
+
+ AddVolunteerComponent,
+    SearchVolunteerComponent,
+    MaintainVolunteerComponent,
+    AddVolunteerWorkTypeComponent,
+    SearchVolunteerWorkTypeComponent,
+    MaintainVolunteerWorkTypeComponent,
+    AddVolunteerWorkHoursComponent,
+
+*STOCK*
+
+import { AddStockComponent } from './add-stock/add-stock.component';
+import { SearchStockComponent } from './search-stock/search-stock.component';
+import { MAintainStockComponent } from './maintain-stock/maintain-stock.component';
+import { CreateStockTypeComponent } from './create-stock-type/create-stock-type.component';
+import { SearchStockTypeComponent } from './search-stock-type/search-stock-type.component';
+import { MaintainStockTypeComponent } from './maintain-stock-type/maintain-stock-type.component';
+
+AddStockComponent,
+    SearchStockComponent,
+    MAintainStockComponent,
+    CreateStockTypeComponent,
+    SearchStockTypeComponent,
+    MaintainStockTypeComponent,
+
+
+
+
+
+
+
+LINKS (if the links don't work)
+Forms
+Template-Driven forms.HTML
+Mat-input-container ->> Mat-form-field
+    remove closing tags
+    name?
