@@ -1,3 +1,148 @@
-<p>
-  maintain-adopter works!
-</p>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  
+  
+  
+  <div class="container bootstrap snippet">
+      <div class="row">
+             <div class="col-sm-10" class="text-center"><h1>Edit Adopter Details</h1></div>
+        
+      </div>
+  </div>
+     
+                
+  
+        <div class="text-center">
+          <h6>Upload Adoption Contract</h6>
+          <input type="file" class="text-center center-block file-upload">
+        </div><br> 
+            <div class="panel panel-default">
+              <div class="panel-heading">Adopter Details</div>
+              <div class="panel-body">
+                    <form class="form" action="##" method="post" id="registrationForm">
+  
+                  <div class="form-group">
+                          <div class="col-xs-6">
+                          <mat-form-field appearance="outline">
+                                  <mat-label>Title</mat-label>
+                                <mat-select required>
+                                  <mat-option value="option">Mr</mat-option>
+                                  <mat-option value="option">Ms</mat-option>
+                                  <mat-option value="option">Mrs</mat-option>
+                                  <mat-option value="option">Dr</mat-option>
+                                  <mat-option value="option">Prof</mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                              </div>
+                      </div>
+  
+                      <div class="form-group">
+                            <div class="col-xs-6">
+                            <mat-form-field appearance="outline">
+                                    <mat-label>Adopter Status</mat-label>
+                                  <mat-select required>
+                                    <mat-option value="option">Adopter</mat-option>
+                                    <mat-option value="option">In Process</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                </div>
+                        </div>
+                      
+  
+                        <div class="form-group">
+                            
+                            <div class="col-xs-6">
+                                <label for="first_name"><h4>First name</h4></label>
+                                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any." >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            
+                            <div class="col-xs-6">
+                              <label for="last_name"><h4>Last name</h4></label>
+                                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            
+                            <div class="col-xs-6">
+                                <label for="phone"><h4>Home Address</h4></label>
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter Home Address" title="enter your phone number if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                               <label for="Tel"><h4>Home Tel</h4></label>
+                                <input type="text" class="form-control" name="HomeTel" id="HomeTel" placeholder="Enter Home tel number" title="enter your home tel number if any.">
+                            </div>
+                        </div>
+            
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                               <label for="mobile"><h4>Mobile</h4></label>
+                                <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter mobile number" title="enter your mobile number if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                               <label for="workNumber"><h4>Work Number</h4></label>
+                                <input type="text" class="form-control" name="WorkNumber" id="WorkNumber" placeholder="Enter Work Number" title="enter your work number if any.">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            
+                            <div class="col-xs-6">
+                                <label for="email"><h4>Email</h4></label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                               <label for="CarRegNumber"><h4>Car Registration Number</h4></label>
+                                <input type="text" class="form-control" name="CarRegNumber" id="CarRegNumber" placeholder="Enter Car Registration Number" title="enter your Car Registration if any.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                               <label for="Employer"><h4>Employer</h4></label>
+                                <input type="text" class="form-control" name="Employer" id="Employer" placeholder="Enter Employer Details" title="Enter Employer Details.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-6">
+                               <label for="Occupation"><h4>Occupation</h4></label>
+                                <input type="text" class="form-control" name="Occupation" id="Occupation" placeholder="Enter Occupation Details" title="Enter Occupation Details.">
+                            </div>
+                        </div>
+                            
+  
+                        
+                 
+                        <br>
+                         <div class="form-group">
+                             <div class="col-xs-12">
+                                  <br>
+                                  <button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-ok-sign" title="Update the New Details"></i> Update</button>
+                                  <button class="btn btn-lg btn-primary pull-left" type="submit"><i class="glyphicon glyphicon"></i> Back</button>
+                                  <button class="btn btn-lg btn-warning pull-right" type="submit"><i class="glyphicon glyphicon-trash"></i> Delete Record</button>
+                                  <button class="btn btn-lg pull-centre" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button></div>
+                        </div>
+                    </form>
+              </div>
+            </div>
+  
+               
+  
+          
+  

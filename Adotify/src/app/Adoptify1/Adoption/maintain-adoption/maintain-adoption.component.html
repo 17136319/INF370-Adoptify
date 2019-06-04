@@ -1,3 +1,284 @@
-<p>
-  maintain-adoption works!
-</p>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  
+  
+  
+  <div class="container bootstrap snippet">
+      <div class="row">
+              <div class="col-sm-10" class="text-center"><h1>Adoption Process</h1></div>
+        
+      </div>
+  </div>
+
+  
+  
+        <div class="text-center">
+          <h6>Upload Adoption Doctuments</h6>
+          <input type="file" class="text-center center-block file-upload">
+        </div><br> 
+
+
+        <mat-tab-group>
+            <mat-tab label="Adption Detail"> 
+            <div class="panel panel-default">
+              <div class="panel-heading">Detail Adoption</div>
+              <div class="panel-body">
+                    <form class="form" action="##" method="post" id="registrationForm">
+                      
+  
+                        <div class="form-group">
+                            
+                            <div class="col-xs-6">
+                                <label for="first_name"><h4>Select Animal</h4></label>
+                                <input type="text" class="form-control" name="Animal" id="Animal" placeholder="Animal" title="Please Select an Animal" disabled>
+                                <button class="btn btn-lg btn-primary" type="submit"><i class="glyphicon glyphicon-search" title="SearchAnimal"></i></button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i></button>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            
+                            <div class="col-xs-6">
+                                <label for="first_name"><h4>Select Adopter</h4></label>
+                                <input type="text" class="form-control" name="Animal" id="Adopter" placeholder="Adopter" title="Please Select Adopter." disabled>
+                                <button class="btn btn-lg btn-primary" type="submit"><i class="glyphicon glyphicon-search" title="SearchAdopter"></i></button>
+                                <button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-plus" title="AddAdopter"></i></button>
+                                <button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i></button>
+                            </div>
+                        </div>    
+
+                                             
+                               
+                        <div class="form-group"> 
+                            <div class="col-xs-6"> 
+                                <label for="first_name"><h4>Select Adoption Date</h4></label>              
+                            <mat-form-field appearance="outline">
+                                        <input matInput [matDatepicker]="picker" placeholder="Date of Adoption">
+                                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                      </mat-form-field>                                      
+                                </div>   
+                                </div>        
+                                <br>
+                                <br>
+                                <br>
+                                <div class="form-group"> 
+                                    <div class="col-xs-12">
+                                      <mat-checkbox>Mark this person has Scheduled Home Check </mat-checkbox>
+                                      </div>
+                                    </div>                               
+                             <br>                          
+                         <div class="form-group">
+                             <div class="col-xs-12">
+                                  <br>
+                                    <button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-circle-arrow-right" title="Save the New Details"></i> NEXT</button>
+                                    <button class="btn btn-lg btn-primary pull-left" type="submit"><i class="	glyphicon glyphicon-circle-arrow-left"></i> Back</button>
+                                      <button class="btn btn-lg pull-center" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                   <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                              </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+              </mat-tab>
+
+
+                <mat-tab label="Homecheck">   
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Schedule Homecheck</div>
+                    <div class="panel-body">
+                          <form class="form" action="##" method="post" id="form">
+  
+                              <div class="form-group"> 
+                                  <div class="col-xs-6"> 
+                                      <label for="first_name"><h4>Select Homecheck Date</h4></label>          
+                                  <mat-form-field appearance="outline">
+                                              <input matInput [matDatepicker]="picker1" placeholder="Schedule Homecheck">
+                                              <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                              <mat-datepicker #picker1></mat-datepicker>
+                                            </mat-form-field>                                      
+                                      </div>   
+                                      </div>        
+                                      <br>
+                                      <br>
+                                      <div class="form-group"> 
+                                        <div class="col-xs-12">
+                                          <mat-checkbox>Mark this Person homechecked and Disapproved</mat-checkbox>
+                                          </div>
+                                        </div>
+                                      <br>
+                                      <div class="form-group"> 
+                                          <div class="col-xs-12">
+                                            <mat-checkbox>Mark this Person homechecked and Approved</mat-checkbox>
+                                            </div>
+                                          </div>                               
+                                   <br>   
+
+                               <div class="form-group">
+                                   <div class="col-xs-12">
+                                        <br>
+                                          <button class="btn btn-lg btn-success pull-right" type="submit" disabled><i class="glyphicon glyphicon-circle-arrow-right" title="Save the New Details"></i> NEXT</button>
+                                          <button class="btn btn-lg btn-primary pull-left" type="submit"><i class="	glyphicon glyphicon-circle-arrow-left"></i> Back</button>
+                                          <button class="btn btn-lg pull-left" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                          <button class="btn btn-lg btn-success center-block" type="submit"><i class="glyphicon glyphicon-floppy-save" title="Save the New Details"></i> SAVE</button>
+                                            
+                                         <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                                    </div>
+                              </div>
+  
+                            </form>
+                          </div>
+                        </div>
+                </mat-tab>
+
+                <mat-tab label="Payment">  
+                  <div class="panel panel-default">
+                    <div class="panel-heading">Adoption Payment</div>
+                    <div class="panel-body">
+                          <form class="form" action="##" method="post" id="form">
+
+                            
+                            <div class="form-group">
+                              <div class="col-xs-6">
+                              <mat-form-field appearance="outline">
+                                      <mat-label>Animal Type</mat-label>
+                                    <mat-select required>
+                                      <mat-option value="option">Cat</mat-option>
+                                      <mat-option value="option">Dog</mat-option>                                      
+                                    </mat-select>
+                                  </mat-form-field>
+                                  </div>
+                          </div>
+
+                        <div class="form-group">
+                          <div class="col-xs-12">
+                              <label for="first_name"><h4>Adoption Fee</h4></label>
+                              <input type="text" class="form-control" name="Animal" id="Animal" placeholder="R700" title="Please Select an Animal" disabled>
+                          </div>
+                      </div>
+
+                              <div class="form-group"> 
+                                  <div class="col-xs-6"> 
+                                      <label for="first_name"><h4>Date of Payment</h4></label>          
+                                  <mat-form-field appearance="outline">
+                                              <input matInput [matDatepicker]="picker3" placeholder="Payment Date">
+                                              <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+                                              <mat-datepicker #picker3></mat-datepicker>
+                                            </mat-form-field>                                      
+                                      </div>   
+                                      </div>        
+                                      <br>
+                                      <br>
+                                      <br>
+                                      <div class="form-group"> 
+                                          <div class="col-xs-12">
+                                            <mat-checkbox>Mark Person has PAID</mat-checkbox>
+                                            </div>
+                                          </div>                               
+                                   <br>                          
+                               <div class="form-group">
+                                   <div class="col-xs-12">
+                                        <br>
+                                          <button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-circle-arrow-right" title="Save the New Details"></i> NEXT</button>
+                                          <button class="btn btn-lg btn-primary pull-left" type="back"><i class="	glyphicon glyphicon-circle-arrow-left"></i> Back</button>
+                                            <button class="btn btn-lg pull-left" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                            <button class="btn btn-lg btn-success center-block" type="submit"><i class="glyphicon glyphicon-floppy-save" title="Save the New Details"></i> SAVE</button>
+                                         <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                                    </div>
+                              </div>
+  
+                            </form>
+                          </div>
+                        </div>
+          </mat-tab>
+
+                <mat-tab label="Collect Animal">  
+                        <div class="panel panel-default">
+                          <div class="panel-heading">Collect Animal</div>
+                          <div class="panel-body">
+                                <form class="form" action="##" method="post" id="form">
+
+                                    <div class="form-group"> 
+                                        <div class="col-xs-6"> 
+                                            <label for="first_name"><h4>Date of Collection</h4></label>          
+                                        <mat-form-field appearance="outline">
+                                                    <input matInput [matDatepicker]="picker2" placeholder="Collection Date">
+                                                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                                    <mat-datepicker #picker2></mat-datepicker>
+                                                  </mat-form-field>                                      
+                                            </div>   
+                                            </div>        
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <div class="form-group"> 
+                                                <div class="col-xs-12">
+                                                  <mat-checkbox>Mark Animal has been collected</mat-checkbox>
+                                                  </div>
+                                                </div>                               
+                                         <br>                          
+                                     <div class="form-group">
+                                         <div class="col-xs-12">
+                                              <br>
+                                                <button class="btn btn-lg btn-success pull-right" type="submit"><i class="glyphicon glyphicon-circle-arrow-right" title="Save the New Details"></i> NEXT</button>
+                                                <button class="btn btn-lg btn-primary pull-left" type="back"><i class="	glyphicon glyphicon-circle-arrow-left"></i> Back</button>
+                                                  <button class="btn btn-lg pull-left" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
+                                                  <button class="btn btn-lg btn-success center-block" type="submit"><i class="glyphicon glyphicon-floppy-save" title="Save the New Details"></i> SAVE</button>
+                                               <!--<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>-->
+                                          </div>
+                                    </div>
+        
+                                  </form>
+                                </div>
+                              </div>
+                </mat-tab>
+
+                <mat-tab label="Finalise Adoption">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Finalise Adoption</div>
+                        <div class="panel-body">
+                              <form class="form" action="##" method="post" id="form">
+
+                                  <div class="form-group"> 
+                                      <div class="col-xs-6"> 
+                                          <label for="first_name" color><h1>Congratulation!!</h1></label>
+                                          <br>
+                                          <label for="first_name"><h4 style="color:Red;">Animal: 002</h4></label>
+                                          <br>
+                                          <label for="first_name"><h2>Was Adopted by</h2></label>
+                                          <br>
+                                          <label for="first_name"><h4 style="color:blue;">Adopter: Emily Black</h4></label>
+                                          </div>
+                                          </div>
+
+                                          <div class="form-group">
+                                              <div class="col-xs-12">
+                                                   <br>
+                                                     <button class="btn btn-lg btn-success center-block" type="submit"><i class="glyphicon glyphicon-ok-sign" title="Save the New Details"></i> DONE  ! </button>
+                                                     
+                                               </div>
+                                         </div>
+
+                                          </form>
+                                          </div>
+                                          </div>
+
+
+                </mat-tab>
+
+              </mat-tab-group>
+
+                  
+              
+  
+               
+  
+          
+  

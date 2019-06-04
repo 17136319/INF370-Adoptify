@@ -25,6 +25,7 @@ import { DashboardCrmModule } from '../dashboard-crm/dashboard-crm.module';
 
 import { CoreModule } from '../core/core.module';
 import { AdoptifyModule } from '../Adoptify_com/adoptify/adoptify.module';
+import { AdoptifyModule1 } from '../Adoptify1/adoptify1.module';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { AdoptifyModule } from '../Adoptify_com/adoptify/adoptify.module';
         MatFormFieldModule,
         ReactiveFormsModule,
         MatInputModule,
-       AdoptifyModule
+       AdoptifyModule,
+       AdoptifyModule1,
     ],
     declarations: [
         AuthComponent,
@@ -56,3 +58,4 @@ import { AdoptifyModule } from '../Adoptify_com/adoptify/adoptify.module';
     ]
 })
 export class AuthModule { }
+

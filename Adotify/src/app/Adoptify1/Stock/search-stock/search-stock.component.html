@@ -1,3 +1,89 @@
-<p>
-  search-stock works!
-</p>
+<div id="asm-body-container"><div id="dialog-tableform" style="display: none;" class="">
+  <div id="dialog-tableform-help" class="ui-widget">
+  <div class="ui-state-highlight ui-corner-all"><p>
+  <span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+  <span id="dialog-tableform-help-text">Stock needs a name and unit.</span>
+  </p></div></div>
+  <div id="dialog-tableform-error" style="display: none" class="ui-widget">
+  <div class="ui-state-error ui-corner-all"><p>
+  <span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+  <strong><span id="dialog-tableform-error-text"></span></strong>
+  </p></div></div>
+  <div id="dialog-tableform-info" style="display: none" class="ui-widget">
+  <div class="ui-state-highlight ui-corner-all"><p>
+  <span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+  <span id="dialog-tableform-info-text"></span>
+  </p></div></div>
+  <div id="dialog-tableform-fields" style="margin-top: 5px">
+  <table width="100%"><tbody><tr><td><label for="name">Name</label></td><td><input id="name" type="text" class="asm-textbox undefined controlshadow controlborder ui-autocomplete-input" data-json="NAME" data-post="name" autocomplete="off" data-validation="notblank"></td></tr><tr><td><label for="description">Description</label></td><td><span style="white-space: nowrap"><textarea id="description" class="asm-textarea undefined controlshadow controlborder" rows="5" data-json="DESCRIPTION" data-post="description" data-zoom="true" spellcheck="false"></textarea><button id="description-zb" style="margin-left: -56px; margin-top: -24px; height: 16px" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" title=""><span class="ui-button-icon-primary ui-icon ui-icon-zoomin"></span><span class="ui-button-text"></span></button></span></td></tr><tr style="display: table-row;"><td><label for="quantity">Quantity</label></td><td><input id="quantity" type="text" class="asm-textbox asm-intbox  controlshadow controlborder" data-json="" data-post="quantity" autocomplete="new-password" data-noedit="true" data-validation="notblank" title="The number of stock records to create"></td></tr><tr><td><label for="location">Location</label></td><td><select id="location" class="asm-selectbox" data-json="STOCKLOCATIONID" data-post="location"><option value="1">Stores</option>
+  </select></td></tr><tr><td><label for="unitname">Units</label></td><td><input id="unitname" type="text" class="asm-textbox undefined controlshadow controlborder ui-autocomplete-input" data-json="UNITNAME" data-post="unitname" autocomplete="off" data-validation="notblank" title="The type of unit in the container, eg: tablet, vial, etc."></td></tr><tr><td><label for="total">Total</label></td><td><input id="total" type="text" class="asm-textbox asm-numberbox  controlshadow controlborder" data-json="TOTAL" data-post="total" autocomplete="new-password" title="Total number of units in the container"></td></tr><tr><td><label for="balance">Balance</label></td><td><input id="balance" type="text" class="asm-textbox asm-numberbox  controlshadow controlborder" data-json="BALANCE" data-post="balance" autocomplete="new-password" data-validation="notblank" title="The remaining units in the container"></td></tr><tr><td><label for="batchnumber">Batch</label></td><td><input id="batchnumber" type="text" class="asm-textbox undefined controlshadow controlborder" data-json="BATCHNUMBER" data-post="batchnumber" autocomplete="new-password" title="If this stock record is for a drug, the batch number from the container"></td></tr><tr><td><label for="expiry">Expiry</label></td><td><input id="expiry" type="text" class="asm-textbox asm-datebox hasDatepicker controlshadow controlborder" data-json="EXPIRY" data-post="expiry" autocomplete="new-password" title="If this stock record is for a perishable good, the expiry date on the container"></td></tr><tr><td><label for="cost">Cost</label></td><td><input id="cost" type="text" class="asm-textbox asm-currencybox controlshadow controlborder" data-json="COST" data-post="cost" autocomplete="new-password" title="The wholesale/trade price the container was bought for"></td></tr><tr><td><label for="unitprice">Unit Price</label></td><td><input id="unitprice" type="text" class="asm-textbox asm-currencybox controlshadow controlborder" data-json="UNITPRICE" data-post="unitprice" autocomplete="new-password" title="The retail/resale price per unit"></td></tr><tr id="undefined" style="display: table-row;"><td><label></label></td><td><div class="ui-widget">
+  <div class="ui-state-highlight ui-corner-all"><p style="padding: 4px">
+  <span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+  Usage explains why this stock record was created or adjusted. Usage records will only be created if the balance changes.
+  </p></div></div></td></tr><tr style="display: table-row;"><td><label for="usagetype">Usage Type</label></td><td><select id="usagetype" class="asm-selectbox" data-json="" data-post="usagetype"><option value="1">Administered</option>
+  <option value="2">Consumed</option>
+  <option value="3">Donated</option>
+  <option value="4">Purchased</option>
+  <option value="5">Sold</option>
+  <option value="6">Stocktake</option>
+  <option value="7">Wasted</option>
+  </select></td></tr><tr style="display: table-row;"><td><label for="usagedate">Usage Date</label></td><td><input id="usagedate" type="text" class="asm-textbox asm-datebox hasDatepicker controlshadow controlborder" data-json="" data-post="usagedate" autocomplete="new-password" data-validation="notblank"></td></tr><tr style="display: table-row;"><td><label for="comments">Comments</label></td><td><span style="white-space: nowrap"><textarea id="comments" class="asm-textarea undefined controlshadow controlborder" rows="5" data-json="" data-post="comments" data-zoom="true" spellcheck="false"></textarea><button id="comments-zb" style="margin-left: -56px; margin-top: -24px; height: 16px" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only" role="button" title=""><span class="ui-button-icon-primary ui-icon ui-icon-zoomin"></span><span class="ui-button-text"></span></button></span></td></tr></tbody></table>
+  </div>
+  <ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-14" tabindex="0" style="display: none;"></ul><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-15" tabindex="0" style="display: none;"></ul></div><div id="asm-content" class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons" style="display: block;"><h3 class="ui-accordion-header ui-helper-reset ui-corner-top ui-state-active centered"><a href="#">Stock</a></h3><div class="ui-helper-reset ui-widget-content ui-corner-bottom" style="padding: 5px;"><div class="asm-toolbar no-print"><button id="button-new" title="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text"><span class="asm-icon asm-icon-new"></span> New Stock</span></button> <button id="button-clone" title="" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text"><span class="asm-icon asm-icon-copy"></span> Clone</span></button> <span style="float: right"><select id="viewlocation" title="" class="asm-selectbox"><option value="0">(all)</option><option value="1">Stores</option>
+  </select></span> </div><table id="tableform" width="100%" class="asm-table tablesorter tablesorter-default hasStickyHeaders"><thead style=""><tr class="tablesorter-headerRow">
+  <th class="ui-state-default tablesorter-header tablesorter-headerAsc" data-column="0"><div class="tablesorter-header-inner">Name</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="1"><div class="tablesorter-header-inner">Location</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="2"><div class="tablesorter-header-inner">Unit</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="3"><div class="tablesorter-header-inner">Total</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="4"><div class="tablesorter-header-inner">Balance</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="5"><div class="tablesorter-header-inner">Cost</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="6"><div class="tablesorter-header-inner">Unit Price</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="7"><div class="tablesorter-header-inner">Value</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="8"><div class="tablesorter-header-inner">Batch</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="9"><div class="tablesorter-header-inner">Expiry</div></th>
+  </tr></thead><thead></thead><tbody><tr id="row-None">
+  <td class="ui-widget-content ui-state-highlight">
+  <span style="white-space: nowrap">
+  <input type="checkbox" data-id="None" title="Select">
+  <a href="#" class="link-edit" data-id="None">bhhg</a>
+  </span>
+  </td>
+  <td class="ui-widget-content ui-state-highlight">
+  Stores
+  </td>
+  <td class="ui-widget-content ui-state-highlight">
+  5
+  </td>
+  <td class="ui-widget-content ui-state-highlight">
+  123
+  </td>
+  <td class="ui-widget-content ui-state-highlight">
+  123
+  </td>
+  <td class="ui-widget-content  rightalign ui-state-highlight">
+  £13.00
+  </td>
+  <td class="ui-widget-content  rightalign ui-state-highlight">
+  £235.00
+  </td>
+  <td class="ui-widget-content ui-state-highlight">
+  £28,905.00
+  </td>
+  <td class="ui-widget-content ui-state-highlight">
+  5664
+  </td>
+  <td class="ui-widget-content ui-state-highlight">
+  06/06/2019
+  </td>
+  </tr></tbody></table><table id="tableform" width="100%" class="asm-table tablesorter tablesorter-default hasStickyHeaders" style="height: 0px; width: 0px; padding: 0px; margin: 0px; border: 0px;"><thead class="tablesorter-stickyHeader" style="width: 710px; position: fixed; margin: 0px; top: 0px; visibility: hidden; z-index: 1; left: 14px;"><tr class="tablesorter-headerRow">
+  <th class="ui-state-default tablesorter-header tablesorter-headerAsc" data-column="0" style="width: 50px; height: 35px;"><div class="tablesorter-header-inner" style="width: 50px;">Name</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="1" style="width: 54px; height: 36px;"><div class="tablesorter-header-inner" style="width: 54px;">Location</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="2" style="width: 25px; height: 36px;"><div class="tablesorter-header-inner" style="width: 26px;">Unit</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="3" style="width: 30px; height: 36px;"><div class="tablesorter-header-inner" style="width: 30px;">Total</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="4" style="width: 52px; height: 36px;"><div class="tablesorter-header-inner" style="width: 52px;">Balance</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="5" style="width: 31px; height: 36px;"><div class="tablesorter-header-inner" style="width: 31px;">Cost</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="6" style="width: 39px; height: 36px;"><div class="tablesorter-header-inner" style="width: 39px;">Unit Price</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="7" style="width: 58px; height: 36px;"><div class="tablesorter-header-inner" style="width: 58px;">Value</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="8" style="width: 36px; height: 36px;"><div class="tablesorter-header-inner" style="width: 37px;">Batch</div></th>
+  <th class="ui-state-default tablesorter-header" data-column="9" style="width: 58px; height: 36px;"><div class="tablesorter-header-inner" style="width: 58px;">Expiry</div></th>
+  </tr></thead></table></div></div></div>

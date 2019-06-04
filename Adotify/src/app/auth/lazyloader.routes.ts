@@ -17,5 +17,7 @@ export const appRoutes: Routes = [{
         // { path: 'editor', loadChildren: '../editor/editor.module#EditorModule' }, 
         { path: 'scrumboard', loadChildren: '../scrumboard/scrumboard.module#ScrumboardModule' },
         {path: 'vol', loadChildren: '../Adoptify_com/adoptify/adoptify.module#AdoptifyModule'},
+        {path: 'vol', loadChildren: '../Adoptify1/adoptify1.module#AdoptifyModule1'},
+
     ]
 }];
