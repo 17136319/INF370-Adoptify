@@ -8,6 +8,7 @@ import { CoreModule } from './core/core.module';
 import { VolunteerComponent } from './Adoptify_com/adoptify/Volunteers/volunteer/volunteer.component';
 import { AdoptifyModule } from './Adoptify_com/adoptify/adoptify.module';
 // import { AddVolunteerHoursComponent } from './Adoptify_com/adoptify/Volunteers/volunteer/add-volunteer-hours/add-volunteer-hours.component';
+
 import { AdoptifyModule1 } from './Adoptify1/adoptify1.module';
 import { AddAnimalComponent } from './Adoptify_com/adoptify/Animal/add-animal/add-animal.component';
 import { AddEmployeeComponent } from './Adoptify1/Employee/add-employee/add-employee.component';
@@ -26,6 +27,10 @@ import { ReturnAnimalComponent } from './Adoptify1/Adoption/return-animal/return
 import { SearchAdoptionComponent } from './Adoptify1/Adoption/search-adoption/search-adoption.component';
 import { CaptureMedicalCardComponent } from './Adoptify1/Medical/capture-medical-card/capture-medical-card.component';
 
+import { AddAnimalComponent } from './Adoptify_com/adoptify/Animal/add-animal/add-animal.component';
+
+
+
 
 
 @NgModule({
@@ -34,6 +39,7 @@ import { CaptureMedicalCardComponent } from './Adoptify1/Medical/capture-medical
     // AddVolunteerHoursComponent,
     // AddAnimalComponent,
     // VolunteerComponent,
+
     //AddEmployeeComponent
     //AddEmployeeTypeComponent
     //MaintainEmployeeComponent
@@ -56,8 +62,12 @@ import { CaptureMedicalCardComponent } from './Adoptify1/Medical/capture-medical
     LazyLoadModule,
     CoreModule,
     BrowserAnimationsModule,
+
     AdoptifyModule,
     AdoptifyModule1
+
+    AdoptifyModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

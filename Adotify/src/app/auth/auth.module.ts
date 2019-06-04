@@ -25,6 +25,7 @@ import { DashboardCrmModule } from '../dashboard-crm/dashboard-crm.module';
 
 import { CoreModule } from '../core/core.module';
 import { AdoptifyModule } from '../Adoptify_com/adoptify/adoptify.module';
+
 import { AdoptifyModule1 } from '../Adoptify1/adoptify1.module';
 
 
@@ -45,6 +46,9 @@ import { AdoptifyModule1 } from '../Adoptify1/adoptify1.module';
         MatInputModule,
        AdoptifyModule,
        AdoptifyModule1,
+
+       AdoptifyModule
+
     ],
     declarations: [
         AuthComponent,
@@ -58,4 +62,3 @@ import { AdoptifyModule1 } from '../Adoptify1/adoptify1.module';
     ]
 })
 export class AuthModule { }
-

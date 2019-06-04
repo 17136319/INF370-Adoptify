@@ -14,7 +14,11 @@ steps:
 
 if there is MERGE problems
 -go to each file that they specify has a merge problem/error and open the file in Notepad
--and search for <<<HEAD 
+-and search for 
 
 
-*only in emergencies use: git push --force
+#Installation if Errors:
+	npm ERR! grpc@1.10.1 install: `node-pre-gyp install --fallback-to-build --library=static_library
+solution:1.npm uninstall --save node-sass
+	 2.npm install --save node-sass
+	 3.npm rebuild node-sass
