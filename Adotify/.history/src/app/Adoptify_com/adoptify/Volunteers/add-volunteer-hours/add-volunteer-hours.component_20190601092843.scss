@@ -1,0 +1,36 @@
+.example-card {
+    max-width: 25%;
+    float: left;
+  }
+  .h1 {
+    text-align: center;
+
+  }
+  .form-header {
+    background-color: #327ebd;
+    color: white;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  //.container {
+  //   max-width: 100%;
+  //   // float: left;
+  // }
+  .card {
+    // max-width: 100%;
+    // float: left;
+  }

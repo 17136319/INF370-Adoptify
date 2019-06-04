@@ -1,0 +1,52 @@
+<div fxLayout="column" fxLayoutAlign="space-evenly stretch" >
+		
+      <div class="" style="background-color: #4e9814" >
+        <div class="table-header" style="padding: 0 20px;">
+          <h1 class="mat-headline center-align" >Tables with filtering</h1>
+        </div>
+        <div class="example-header" style="padding: 0 20px;">
+          <mat-form-field floatPlaceholder="never" style="color: white; width: 100%;">
+            <input matInput #filter placeholder="Filter users">
+          </mat-form-field>
+        </div>
+    
+        <mat-table #table [dataSource]="dataSource">
+    
+          <!-- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+    
+          <!-- ID Column -->
+          <ng-container matColumnDef="userId">
+            <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+            <mat-cell ></mat-cell>
+          </ng-container>
+          <!-- ID Column -->
+          <ng-container matColumnDef="userId">
+              <mat-header-cell *matHeaderCellDef> Title </mat-header-cell>
+              <mat-cell ></mat-cell>
+            </ng-container>
+          <!-- Name Column--> 
+          <ng-container matColumnDef="userName">
+            <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+          </ng-container>
+    
+          <!-- Color Column -->
+          <ng-container matColumnDef="color">
+            <mat-header-cell *matHeaderCellDef> Surname </mat-header-cell>
+            <mat-cell *matCellDef="let row"> {{row.Surname}} </mat-cell>
+          </ng-container>
+          
+          <!-- Color Column -->
+          <ng-container matColumnDef="color">
+              <mat-header-cell *matHeaderCellDef> Contact Number </mat-header-cell>
+              <mat-cell *matCellDef="let row"> {{row.Number}} </mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          
+        </mat-table>
+      </div>
+    
+    </div>

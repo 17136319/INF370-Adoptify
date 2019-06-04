@@ -1,0 +1,83 @@
+<mat-toolbar class="form-header">
+    <h1 class="mat-headline center-align"  >Volunteer</h1>
+  </mat-toolbar>
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input type="text" placeholder="Search Volunteer" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+<div fxLayout="row" fxLayout.xs = "column" fxLayoutWrap fxLayoutGap="0.8%" fxLayoutAlign="center">
+  <div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Name</mat-card-title>
+        <mat-card-subtitle>Surname</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button style="background-color: #327ebd;"><a routerlink="volunteer">Delete</a></button>
+        <button mat-button style="background-color: #327ebd;">Add Volunteer Hours</button>
+        <button mat-button style="background-color: #327ebd;">Update</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="card">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Name</mat-card-title>
+          <mat-card-subtitle>Surname</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button style="background-color: #327ebd;"><a routerlink="volunteer">Delete</a></button>
+          <button mat-button style="background-color: #327ebd;">Add Volunteer Hours</button>
+          <button mat-button style="background-color: #327ebd;">Update</button>
+        </mat-card-actions>
+      </mat-card>
+  </div>
+  <div class="card">
+    <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Name</mat-card-title>
+          <mat-card-subtitle>Surname</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button style="background-color: #327ebd;"><a routerlink="volunteer">Delete</a></button>
+          <button mat-button style="background-color: #327ebd;">Add Volunteer Hours</button>
+          <button mat-button style="background-color: #327ebd;">Update</button>
+        </mat-card-actions>
+      </mat-card>
+  </div>
+  <div class="card">
+      <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Name</mat-card-title>
+            <mat-card-subtitle>Surname</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button style="background-color: #327ebd;"><a routerlink="volunteer">Delete</a></button>
+            <button mat-button style="background-color: #327ebd;">Add Volunteer Hours</button>
+            <button mat-button style="background-color: #327ebd;">Update</button>
+          </mat-card-actions>
+        </mat-card>
+  </div>
+</div>
