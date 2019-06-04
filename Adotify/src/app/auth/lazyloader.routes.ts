@@ -16,8 +16,12 @@ export const appRoutes: Routes = [{
         { path: 'guarded-routes', loadChildren: '../guarded-routes/guarded-routes.module#GuardedRoutesModule' },
         // { path: 'editor', loadChildren: '../editor/editor.module#EditorModule' }, 
         { path: 'scrumboard', loadChildren: '../scrumboard/scrumboard.module#ScrumboardModule' },
+<<<<<<< HEAD
         {path: 'vol', loadChildren: '../Adoptify_com/adoptify/adoptify.module#AdoptifyModule'},
         {path: 'vol', loadChildren: '../Adoptify1/adoptify1.module#AdoptifyModule1'},
 
+=======
+        {path: 'adoptify', loadChildren: '../Adoptify_com/adoptify/adoptify.module#AdoptifyModule'},
+>>>>>>> efc51a80806ae2ce45b234d3897c7eff93549c95
     ]
 }];

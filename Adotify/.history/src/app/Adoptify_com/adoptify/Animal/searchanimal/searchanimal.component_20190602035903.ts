@@ -1,0 +1,22 @@
+import {fromEvent as observableFromEvent,  Observable } from 'rxjs';
+
+import {distinctUntilChanged, debounceTime} from 'rxjs/operators';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { ExampleDatabase, ExampleDataSource } from './helpers.data';
+@Component({
+  selector: 'app-searchanimal',
+  templateUrl: './searchanimal.component.html',
+  styleUrls: ['./searchanimal.component.scss']
+})
+export class SearchanimalComponent implements OnInit {
+	public displayedColumns = ['userId', 'userName', 'progress', 'color'];
+	public exampleDatabase = new ExampleDatabase();
+	public dataSource: ExampleDataSource | null;
+  	public showFilterTableCode;
+  	@ViewChild('filter') filter: ElementRef;
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
